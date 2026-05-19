@@ -51,8 +51,8 @@ const lessonsData = {
     "10": {
         "title": "10. Advanced: OOP (Classes & Objects)",
         "instructions": "<h3>Theory:</h3>Python is an Object-Oriented Programming language. A <code>class</code> is like a blueprint, and an <code>object</code> is an instance created from that blueprint. The <code>__init__</code> method acts as the constructor.<br><br><b>Mission:</b> Run this code to see how objects hold unique state properties, then create a second wizard object named 'Gollum'.",
-        "placeholder": class Wizard:\n    def __init__(self, name, spell):\n        self.name = name\n        self.spell = spell\n\n    def cast(self):\n        return f\"🧙‍♂️ {self.name} casts {self.spell}!\"\n\n# Instantiate an object\nmerlin = Wizard(\"Merlin\", \"Fireball\")\nprint(merlin.cast())"
-}
+        "placeholder": "class Wizard:\n    def __init__(self, name, spell):\n        self.name = name\n        self.spell = spell\n\n    def cast(self):\n        return f\"🧙‍♂️ {self.name} casts {self.spell}!\"\n\n# Instantiate an object\nmerlin = Wizard(\"Merlin\", \"Fireball\")\nprint(merlin.cast())"
+    }
 };
 
 document.addEventListener("DOMContentLoaded", async () => {
