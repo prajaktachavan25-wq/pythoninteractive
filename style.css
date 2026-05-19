@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #11111b;
+    padding: 20px;
+    border-right: 1px solid #313244;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    color: #f5c2e7;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 10px;
+    margin-bottom: 8px;
+    background: #181825;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.sidebar li:hover, .sidebar li.active {
+    background: #89b4fa;
+    color: #11111b;
+    font-weight: bold;
+}
+
+.workspace {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+}
+
+.instructions-panel {
+    background: #181825;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #a6e3a1;
+}
+
+.instructions-panel h1 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.editor-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#code-editor {
+    flex: 1;
+    background: #11111b;
+    color: #a6e3a1;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    padding: 15px;
+    border: 1px solid #313244;
+    border-radius: 8px;
+    resize: none;
+    outline: none;
+}
+
+#run-btn {
+    align-self: flex-end;
+    background: #a6e3a1;
+    color: #11111b;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#run-btn:disabled {
+    background: #585b70;
+    cursor: not-allowed;
+}
+
+.terminal-panel {
+    height: 150px;
+    background: #11111b;
+    border: 1px solid #313244;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.terminal-panel h3 {
+    font-size: 0.9rem;
+    color: #bac2de;
+    margin-bottom: 5px;
+}
+
+#terminal-output {
+    font-family: 'Courier New', Courier, monospace;
+    color: #f5e0dc;
+    white-space: pre-wrap;
+}
