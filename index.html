@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Python Learner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Lessons</h2>
+            <ul id="lesson-list">
+                </ul>
+        </aside>
+
+        <main class="workspace">
+            <section class="instructions-panel">
+                <h1 id="lesson-title">Select a Lesson</h1>
+                <p id="lesson-text">Click a lesson on the left sidebar to begin your Python journey!</p>
+            </section>
+
+            <section class="editor-panel">
+                <textarea id="code-editor" placeholder="# Write your Python code here..." spellcheck="false"></textarea>
+                <button id="run-btn" disabled>Run Code ▶</button>
+            </section>
+
+            <section class="terminal-panel">
+                <h3>Console Output:</h3>
+                <pre id="terminal-output">Output will appear here...</pre>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
